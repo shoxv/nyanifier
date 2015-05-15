@@ -1,7 +1,7 @@
 (function() {
-   $('head').append('<link rel="stylesheet" href="http://ingraphs.prod.linkedin.com/static/ingraphs/css/nyangraphs.css">');
-  var sparkInt;
-	$('body').css('background-color', '#0f4d8f').append('<div id="nyancat"> <img src="http://ingraphs.prod.linkedin.com/static/ingraphs/img/nyancat.gif" /> <audio id="nyanaudio" loop="loop" src="http://ingraphs.prod.linkedin.com/static/ingraphs/nyancat.mp3" type="audio/mpeg"> </audio></div>');
+	var sparkInt;
+	$('head').append('<link rel="stylesheet" href="../nyangraphsopen.css">');
+	$('body').css('background-color', '#0f4d8f').append('<div id="nyancat"> <img src="../nyancat.gif" /> <audio id="nyanaudio" loop="loop" src="../nyancat.mp3" type="audio/mpeg"> </audio></div>');
 	$('#nyanaudio').get(0).play();
 
 	//animating sparks
@@ -22,11 +22,11 @@
 			.append('<div class="dot dot-7" />')
 			.append('<div class="dot dot-8" />')
 			.append('<div class="dot dot-9" />');
-		if ( $('.spark').length < 15 ) {
-        $spark.one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(){
-        $(this).remove();
-      }).prependTo('body');
-    }
+			if ( $('.spark').length < 15 ) {
+	        $spark.one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(){
+	        $(this).remove();
+	      }).prependTo('body');
+	    }
 	}
   sparkInt = setInterval(addSpark, 100);
 
@@ -40,9 +40,9 @@
 				class: 'rainbow-col'
 			}),
 			i = 0,
-      j = 0,
-      rainbowInt,
-      numCols = 15;
+			j = 0,
+			rainbowInt,
+			numCols = 15;
 
     //add rows
 		while (i < 7) {
@@ -55,8 +55,9 @@
       $rainbowCol.clone().appendTo($rainbow);
       j++;
     }
-
-    $rainbow.css('right', $('#nyancat img').position().left + 24).prependTo('#nyancat');
+    $('#nyancat img').on('load', function(){
+    	$rainbow.css('right', $('#nyancat img').position().left + 24).prependTo('#nyancat');
+    });
 
     rainbowInt = setInterval(function(){
       $('.rainbow').toggleClass('shiftpos');

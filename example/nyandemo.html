@@ -1,10 +1,326 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link href="">
-		<script src=""></script>
-	</head>
-	<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Saif Ebrahim</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,900' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-	</body>
+        <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+		    margin: 0;
+		    padding: 0;
+		    border: 0;
+		    font-size: 100%;
+		    font: inherit;
+		    vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+		    display: block;
+		}
+		body {
+		    line-height: 1;
+		}
+		ol, ul {
+		    list-style: none;
+		}
+		blockquote, q {
+		    quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+		    content: '';
+		    content: none;
+		}
+		table {
+		    border-collapse: collapse;
+		    border-spacing: 0;
+		}
+
+		html,
+		button,
+		input,
+		select,
+		textarea {
+		    color: #222;
+		}
+
+		html {
+		    font-size: 1em;
+		    line-height: 1.4;
+		    font-family: 'Calibri', sans-serif;
+		}
+
+		/*
+		 * Remove text-shadow in selection highlight: h5bp.com/i
+		 * These selection rule sets have to be separate.
+		 * Customize the background color to match your design.
+		 */
+
+		::-moz-selection {
+		    background: #b3d4fc;
+		    text-shadow: none;
+		}
+
+		::selection {
+		    background: #b3d4fc;
+		    text-shadow: none;
+		}
+
+		::-webkit-input-placeholder {
+		   color: #555; font-style: italic;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: #555; font-style: italic;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: #555; font-style: italic;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: #555; font-style: italic;  
+		}
+
+		/*
+		 * A better looking default horizontal rule
+		 */
+
+		hr {
+		    display: block;
+		    height: 1px;
+		    border: 0;
+		    border-top: 1px solid #ccc;
+		    margin: 1em 0;
+		    padding: 0;
+		}
+
+		/*
+		 * Remove the gap between images, videos, audio and canvas and the bottom of
+		 * their containers: h5bp.com/i/440
+		 */
+
+		audio,
+		canvas,
+		img,
+		video {
+		    vertical-align: middle;
+		}
+
+		/*
+		 * Remove default fieldset styles.
+		 */
+
+		fieldset {
+		    border: 0;
+		    margin: 0;
+		    padding: 0;
+		}
+
+		/*
+		 * Allow only vertical resizing of textareas.
+		 */
+
+		textarea {
+		    resize: vertical;
+		}
+
+		/* ==========================================================================
+		   Author's custom styles
+		   ========================================================================== */
+		/* Site-wide styles */
+		body { color: #a4a5a0; }
+		a { color: #238bb5; }
+		h1 { font-size: 10em; font-weight: bold; color: #238bb5; text-transform: uppercase; line-height: 1; }
+		h2 { font-size: 3.75em; text-transform: uppercase; margin: .3em 0; font-family: 'exo', sans-serif; font-weight: 100; }
+		h3 { font-size: 23px; color: #238bb5; }
+		.inner-wrap { max-width: 982px; margin: auto; }
+		.button { background: #a4a5a0; font-family: 'exo', sans-serif; border-radius: 5px; color: #313036; font-weight: bold; font-size: 33px; text-transform: uppercase; display: inline-block; padding: .2em 1.2em; cursor: pointer; text-align: center; transition: all .3s; -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; }
+		.button:hover { background: #238bb5; }
+		.button.small { font-size: 1.3em; }
+		.button-wrap { text-align: center; }
+		.page-title { text-align: center; }
+
+		header { border-bottom: 1px solid #222126; }
+		#logo { padding: 1em 5% 0 5%; width: 36%; text-align: center; font-size: 34px; font-weight: bold; cursor: pointer; text-transform: uppercase; }
+		#logo .plus { color: #238bb5; }
+		#logo, #main-nav, #main-nav li { float: left; }
+		#main-nav { width: 64%; font-size: 1.5em; }
+		#main-nav li { padding: 2em 5% .75em 5%; border-right: 1px solid #222126; cursor: pointer; transition: all .3s; -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; width: 25%; text-align: center; }
+		#main-nav li:hover, #main-nav li.active { background: #2d2c31; color: #238bb5; }
+		#main-nav li:first-child { border-left: 1px solid #222126; }
+
+		#main section { margin-bottom: 2em; transition: opacity .5s; -o-transition: opacity .5s; -moz-transition: opacity .5s; -webkit-transition: opacity .5s; }
+
+		/* About section */
+		.splash { width: 90%; margin: 2em auto; border: 1px solid #222126; text-align: center; padding: 1.5em 5%; }
+		.splash h2 { margin: 0; }
+		.splash p { margin: 1em ; }
+		#about .multi-col { border-top: 1px solid #222126; padding: 1em 2%; }
+		#about .col-wrap { margin: 0 auto; }
+		#about .col { float: left; width: 30%; margin-left: 5%; position: relative; min-height: 338px; text-align: justify; padding-top: 85px; padding-bottom: 30px; }
+		#about .col h3 { text-transform: uppercase; text-align: left; margin: 10px 0; }
+		#about .col .img-wrap { height: 85px; cursor: pointer; overflow: hidden; position: absolute; top: 0; z-index: 2; -webkit-transition: .5s all; -moz-transition: .5s all; -ms-transition: .5s all; -o-transition: .5s all; transition: .5s all; }
+		#about .col .img-wrap:hover { height: 305px; }
+		#about .col img { max-width: 100%; }
+		#about .col .button { position: absolute; bottom: 0; }
+		#about .col:first-child { margin-left: 0; }
+
+		/* Work section */
+		.grid-unit { width: 31%; float: left; background: #ccc; margin: .9%; position: relative; }
+		.grid-unit img { max-width: 100%; }
+		.grid-unit .currently-viewing { display: none; }
+		.grid-unit .plus { font-size: 100px; color: #28272c; position: absolute; top: -16px; right: 8px; font-family: exo; font-weight: 900; }
+		.grid-inner-wrap { width: 100%; height: 100%; padding-bottom: 100%; overflow: hidden; }
+		.grid-overlay { background: #238bb5; font-family: 'exo', sans-serif; width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity .5s; -o-transition: opacity .5s; -moz-transition: opacity .5s; -webkit-transition: opacity .5s; cursor: pointer; }
+		.grid-overlay span { text-transform: uppercase; width: 5em; position: absolute; bottom: 1em; left: 1em; font-size: 33px; color: #28272c; }
+		.grid-unit:hover .grid-overlay,
+		.grid-unit.selected .grid-overlay { opacity: 1; }
+
+		.load-more { padding: 1em 0; clear: both; }
+
+
+		/* ==========================================================================
+		   Helper classes
+		   ========================================================================== */
+
+		.exo { font-family: 'exo', sans-serif; }
+		.bold { font-weight: 900; }
+		.thin { font-weight: 100; }
+		.bb { 
+		    -moz-box-sizing: border-box;
+		    -webkit-box-sizing: border-box;
+		    box-sizing: border-box;
+		}
+
+		.center { text-align: center; }
+		.ir {
+		    background-color: transparent;
+		    border: 0;
+		    overflow: hidden;
+		    /* IE 6/7 fallback */
+		    *text-indent: -9999px;
+		}
+
+		.ir:before {
+		    content: "";
+		    display: block;
+		    width: 0;
+		    height: 150%;
+		}
+
+		.arrow { background: url('../img/arrow-l.png') no-repeat; width:29px; height: 43px; position: absolute; right: 0; top: 0; }
+
+		/*
+		 * Clearfix: contain floats
+		 *
+		 * For modern browsers
+		 * 1. The space content is one way to avoid an Opera bug when the
+		 *    `contenteditable` attribute is included anywhere else in the document.
+		 *    Otherwise it causes space to appear at the top and bottom of elements
+		 *    that receive the `clearfix` class.
+		 * 2. The use of `table` rather than `block` is only necessary if using
+		 *    `:before` to contain the top-margins of child elements.
+		 */
+
+		.clearfix:before,
+		.clearfix:after {
+		    content: " "; /* 1 */
+		    display: table; /* 2 */
+		}
+
+		.clearfix:after {
+		    clear: both;
+		}
+
+		/*
+		 * For IE 6/7 only
+		 * Include this rule to trigger hasLayout and contain floats.
+		 */
+
+		.clearfix {
+		    *zoom: 1;
+		}
+        </style>
+    </head>
+    <body class="bg">
+        <!--[if lt IE 8]>
+            <div class="browser">This site uses the latest web technologies. Please use a modern browser such as Chrome, Firefox, Safari, or IE9+.</div>
+        <![endif]-->
+        <header class="clearfix">
+            <div class="inner-wrap">
+                <div id="logo" class="bb exo load-page" data-page="about">
+                    Saif Ebrahim<i class="plus">+</i>
+                </div>
+                <nav role="navigation">
+                    <ul id="main-nav" class="bb clearfix exo">
+                        <li class="bb load-page" data-page="about">About</li>
+                        <li class="bb load-page" data-page="portfolio">Portfolio</li>
+                        <li class="bb load-page" data-page="resume">Resume</li>
+                        <li class="bb load-page" data-page="contact">Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="main">
+            <section id="about">
+                <div class="splash bb inner-wrap solid">
+                    <h1 class="exo">Hello</h1>
+                    <h2 class="exo thin">My name is <span class="bold">saif</span></h2>
+                    <p>I'm a Web Developer, a Javascript fanatic, and an enthusiast for anything that makes websites work better. I love web development, whether its starting with a blank Notepad document and turning it into a fully functioning website, or writing a complex Javascript web application utilizing various design patterns to ensure my code is clean, reusable, performant, and rescalable. At my current job, I focus on creating consumer-facing functionality in the form of web sites and web apps. Have a look at the portfolio section to see some of the projects I've worked on.</p>
+                    <div data-page="portfolio" class="button load-page">Portfolio</div>
+                </div>
+                <div class="multi-col solid">
+                    <div class="inner-wrap">
+                        <div class="col-wrap clearfix">
+                            <div class="col bb">
+                                <h3 class="exo thin">CafePress <span class="bold">Product Designer</span></h3>
+                                <p>The CafePress Product Designer allows designers to fully customize their products with an intuitive drag and drop interface. It lets users shift, scale, or select preset options to fit their design perfectly onto their products, ensuring every product is exact to their liking.</p>
+
+                                <div class="button small load-project" data-project="cp-edit-products">View</div>
+                            </div>
+                            <div class="col bb">
+                                <h3 class="exo thin">Target <span class="bold">PhotoPrints iOS App</span></h3>
+                                <p>The Target PhotoPrints Mobile App allows users to upload a photo from the gallery or camera on their iOS/Android devices and instantly have their photo prints available at a Target location nearby in a matter of hours.</p>
+
+                                <div class="button small load-project" data-project="target">View</div>
+                            </div>
+                            <div class="col bb">
+                                <h3 class="exo thin">CafePress <span class="bold">Responsive Website</span></h3>
+                                <p>The CafePress.com responsive website project included redesigning and coding the whole user buy flow – Home Page, Search Results, Department Details Page, Product Details Page, Cart, and Checkout to work on Desktop, Laptops, Tablets, and Mobile phones with one code base.</p>
+
+                                <div class="button small load-project" data-project="cp-responsive-site">View</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- end about-->
+        </div> <!-- end #main -->
+        <div class="project-overlay"></div>
+        <div id="project-popup"></div>
+        <script src="../nyangraphsopen.js"></script>
+    </body>
 </html>
