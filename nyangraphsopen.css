@@ -1,0 +1,507 @@
+
+.spark {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  -webkit-animation: spark 2s;
+  -moz-animation: spark 2s;
+  -ms-animation: spark 2s;
+  -o-animation: spark 2s;
+  animation: spark 2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  z-index: 9999;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background: #FFF;
+  position: absolute;
+}
+
+.spark .dot-1 {
+  -webkit-animation: dot-1 .7s infinite;
+  -moz-animation: dot-1 .7s infinite;
+  -ms-animation: dot-1 .7s infinite;
+  -o-animation: dot-1 .7s infinite;
+  animation: dot-1 .7s infinite;
+}
+
+.spark .dot-2 {
+  -webkit-animation: dot-2 .7s infinite;
+  -moz-animation: dot-2 .7s infinite;
+  -ms-animation: dot-2 .7s infinite;
+  -o-animation: dot-2 .7s infinite;
+  animation: dot-2 .7s infinite;
+}
+
+.spark .dot-3 {
+  -webkit-animation: dot-3 .7s infinite;
+  -moz-animation: dot-3 .7s infinite;
+  -ms-animation: dot-3 .7s infinite;
+  -o-animation: dot-3 .7s infinite;
+  animation: dot-3 .7s infinite;
+}
+
+.spark .dot-4 {
+  -webkit-animation: dot-4 .7s infinite;
+  -moz-animation: dot-4 .7s infinite;
+  -ms-animation: dot-4 .7s infinite;
+  -o-animation: dot-4 .7s infinite;
+  animation: dot-4 .7s infinite;
+}
+
+.spark .dot-5 {
+  -webkit-animation: dot-5 .7s infinite;
+  -moz-animation: dot-5 .7s infinite;
+  -ms-animation: dot-5 .7s infinite;
+  -o-animation: dot-5 .7s infinite;
+  animation: dot-5 .7s infinite;
+}
+
+.spark .dot-6 {
+  -webkit-animation: dot-6 .7s infinite;
+  -moz-animation: dot-6 .7s infinite;
+  -ms-animation: dot-6 .7s infinite;
+  -o-animation: dot-6 .7s infinite;
+  animation: dot-6 .7s infinite;
+}
+
+.spark .dot-7 {
+  -webkit-animation: dot-7 .7s infinite;
+  -moz-animation: dot-7 .7s infinite;
+  -ms-animation: dot-7 .7s infinite;
+  -o-animation: dot-7 .7s infinite;
+  animation: dot-7 .7s infinite;
+}
+
+.spark .dot-8 {
+  -webkit-animation: dot-8 .7s infinite;
+  -moz-animation: dot-8 .7s infinite;
+  -ms-animation: dot-8 .7s infinite;
+  -o-animation: dot-8 .7s infinite;
+  animation: dot-8 .7s infinite;
+}
+
+.spark.alt .dot-1 {
+  -webkit-animation: dot-1-alt .7s infinite;
+  -moz-animation: dot-1-alt .7s infinite;
+  -ms-animation: dot-1-alt .7s infinite;
+  -o-animation: dot-1-alt .7s infinite;
+  animation: dot-1-alt .7s infinite;
+}
+
+.spark.alt .dot-2 {
+  -webkit-animation: dot-2-alt .7s infinite;
+  -moz-animation: dot-2-alt .7s infinite;
+  -ms-animation: dot-2-alt .7s infinite;
+  -o-animation: dot-2-alt .7s infinite;
+  animation: dot-2-alt .7s infinite;
+}
+
+.spark.alt .dot-3 {
+  -webkit-animation: dot-3-alt .7s infinite;
+  -moz-animation: dot-3-alt .7s infinite;
+  -ms-animation: dot-3-alt .7s infinite;
+  -o-animation: dot-3-alt .7s infinite;
+  animation: dot-3-alt .7s infinite;
+}
+
+.spark.alt .dot-4 {
+  -webkit-animation: dot-4-alt .7s infinite;
+  -moz-animation: dot-4-alt .7s infinite;
+  -ms-animation: dot-4-alt .7s infinite;
+  -o-animation: dot-4-alt .7s infinite;
+  animation: dot-4-alt .7s infinite;
+}
+
+.spark.alt .dot-5 {
+  -webkit-animation: dot-5-alt .7s infinite;
+  -moz-animation: dot-5-alt .7s infinite;
+  -ms-animation: dot-5-alt .7s infinite;
+  -o-animation: dot-5-alt .7s infinite;
+  animation: dot-5-alt .7s infinite;
+}
+
+.spark.alt .dot-6 {
+  -webkit-animation: dot-6-alt .7s infinite;
+  -moz-animation: dot-6-alt .7s infinite;
+  -ms-animation: dot-6-alt .7s infinite;
+  -o-animation: dot-6-alt .7s infinite;
+  animation: dot-6-alt .7s infinite;
+}
+
+.spark.alt .dot-7 {
+  -webkit-animation: dot-7-alt .7s infinite;
+  -moz-animation: dot-7-alt .7s infinite;
+  -ms-animation: dot-7-alt .7s infinite;
+  -o-animation: dot-7-alt .7s infinite;
+  animation: dot-7-alt .7s infinite;
+}
+
+.spark.alt .dot-8 {
+  -webkit-animation: dot-8-alt .7s infinite;
+  -moz-animation: dot-8-alt .7s infinite;
+  -ms-animation: dot-8-alt .7s infinite;
+  -o-animation: dot-8-alt .7s infinite;
+  animation: dot-8-alt .7s infinite;
+}
+
+.spark.alt .dot-9 {
+  display: none;
+}
+
+@-webkit-keyframes spark {
+  0% { left: 99%; }
+  100% { left: 0%; }
+}
+@-webkit-keyframes dot-1 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-2 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-3 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-4 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-5 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(15px, 15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-6 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-15px, -15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-7 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-15px, 15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-8 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(15px, -15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-1-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(15px, 0) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-2-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-15px, 0) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-3-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(0, 15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-4-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(0, -15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-5-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-6-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-7-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-webkit-keyframes dot-8-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+
+/* Moz Animation */
+@-moz-keyframes spark {
+  0% { left: 99%; }
+  100% { left: 0%; }
+}
+@-moz-keyframes dot-1 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-2 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-3 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-4 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-5 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(15px, 15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-6 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-15px, -15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-7 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-15px, 15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-8 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(15px, -15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-1-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(15px, 0) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-2-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-15px, 0) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-3-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(0, 15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-4-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(0, -15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-5-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-6-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-7-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes dot-8-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+
+/* Fallback Animation */
+@keyframes spark {
+  0% { left: 99%; }
+  100% { left: 0%; }
+}
+@keyframes dot-1 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-2 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-3 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-4 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-5 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(15px, 15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-6 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-15px, -15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-7 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-15px, 15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-8 {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(15px, -15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-1-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(15px, 0) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-2-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-15px, 0) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-3-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(0, 15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-4-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(0, -15px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-5-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-6-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-7-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, 10px) }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes dot-8-alt {
+  0% { transform: translate(0px, 0px) }
+  50% { transform: translate(-10px, -10px) }
+  100% { transform: translate(0px, 0px) }
+}
+
+.rainbow {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: -45px;
+}
+
+.rainbow-col {
+  width: 60px;
+  float: left;
+}
+
+.rainbow-col:nth-child(6n+1) {
+  margin-top: 5px;
+}
+
+.rainbow-col:nth-child(6n+2) {
+  margin-top: 10px;
+}
+
+.rainbow-col:nth-child(6n+3) {
+  margin-top: 15px;
+}
+
+.rainbow-col:nth-child(6n+4) {
+  margin-top: 10px;
+}
+
+.rainbow-col:nth-child(6n+5) {
+  margin-top: 5px;
+}
+
+.rainbow.shiftpos .rainbow-col:nth-child(6n+1) {
+  margin-top: -5px;
+}
+
+.rainbow.shiftpos .rainbow-col:nth-child(6n+2) {
+  margin-top: -10px;
+}
+
+.rainbow.shiftpos .rainbow-col:nth-child(6n+3) {
+  margin-top: -15px;
+}
+
+.rainbow.shiftpos .rainbow-col:nth-child(6n+4) {
+  margin-top: -10px;
+}
+
+.rainbow.shiftpos .rainbow-col:nth-child(6n+5) {
+  margin-top: -5px;
+}
+
+.rainbow-row {
+  height: 15px;
+  background: #ff0000;
+}
+
+.rainbow-row:nth-child(2) {
+  background: #ff9900;
+}
+
+.rainbow-row:nth-child(3) {
+  background: #ffff00;
+}
+
+.rainbow-row:nth-child(4) {
+  background: #33ff00;
+}
+
+.rainbow-row:nth-child(5) {
+  background: #0099ff;
+}
+
+.rainbow-row:nth-child(6) {
+  background: #6633ff;
+}
+
+.rainbow-row:nth-child(7) {
+  background: purple;
+}
+
+#nyancat {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+#nyancat img {
+  left: 50%;
+  position: absolute;
+  margin-left: -136px;
+  margin-top: -68px;
+}
